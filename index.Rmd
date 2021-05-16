@@ -1,5 +1,3 @@
 ---
-title: "Miao Lu’s Blog"
-site: distill::distill_website
-listing: posts
+site: blogdown:::blogdown_site
 ---
