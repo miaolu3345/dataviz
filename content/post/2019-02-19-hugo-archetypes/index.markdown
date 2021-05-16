@@ -2,8 +2,8 @@
 title: 'A Spoonful of Hugo: Archetypes'
 summary: Why you should use Hugo archetypes in your blogdown site
 authors: 
-- alison
-date: '2019-02-19'
+- miaolu
+date: '2021-05-16'
 image:
   caption: '[Photo by Joanna Kosinska on Unsplash](https://unsplash.com/photos/Prfs32wh-o4)'
   focal_point: 'center'

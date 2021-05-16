@@ -2,8 +2,8 @@
 title: 'A Spoonful of Hugo: The netlify.toml File'
 summary: Why you should use a netlify.toml file in your blogdown site
 authors:
-- alison
-date: '2019-02-20'
+- miaolu
+date: '2021-05-16'
 image:
   caption: '[Photo by Joanna Kosinska on Unsplash](https://unsplash.com/photos/Prfs32wh-o4)'
   focal_point: 'center'

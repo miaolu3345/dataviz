@@ -9,12 +9,12 @@
   weight = 10
   
 [[main]]
-  name = "Blog"
+  name = "Home"
   url = "/post"
   weight = 20
 
 [[main]]
-  name = "Talks"
+  name = "Makeover"
   url = "/talks"
   weight = 30
 

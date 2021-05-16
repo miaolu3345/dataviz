@@ -1,11 +1,11 @@
 ---
 # Display name
-name: Alison Hill
+name: Miao Lu
 
 # Username (this should match the folder name)
-title: Alison Hill
+title: Miao lu
 authors:
-- alison
+- miaolu
 
 # Is this the primary user of the site?
 superuser: true

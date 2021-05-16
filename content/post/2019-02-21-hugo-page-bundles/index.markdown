@@ -1,8 +1,8 @@
 ---
 title: 'A Spoonful of Hugo: Page Bundles'
 authors:
-- alison
-date: '2019-02-21'
+- miaolu
+date: '2021-05-16'
 summary: Why (and how) you should use Hugo's new page bundles feature
 image:
   caption: '[Photo by Joanna Kosinska on Unsplash](https://unsplash.com/photos/Prfs32wh-o4)'

@@ -1,7 +1,7 @@
 ---
 aliases: [r-ladies-slides]
 title: R-Ladies Presentation Ninja
-authors: [alison]
+authors: [miaolu]
 summary: A guide to using the R-Ladies xaringan slide theme
 date: '2017-12-18'
 categories:
