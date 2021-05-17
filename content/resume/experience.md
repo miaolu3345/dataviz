@@ -24,8 +24,33 @@ date_format = "January 2006"
   location = "Singapore"
   date_start = "2020-12"
   date_end = "2021-06"
-  description = """
-  """
+  description = """ """
 
+[[experience]]
+  title = "Software Tester"
+  company = "H3C Group"
+  company_url = "https://www.h3c.com/en/About_Us/"
+  location = "China, Hangzhou"
+  date_start = "2016-07"
+  date_end = "2019/10"
+  description = """ """
+  
+[[experience]]
+  title = "Senior Research Associate"
+  company = "Oregon Health & Science University"
+  company_url = "https://www.ohsu.edu/"
+  location = "Portland, Oregon"
+  date_start = "2010-03-01"
+  date_end = "2011-12-31"
+  description = """ """
+  
+[[experience]]
+  title = "Assistant Research Professor"
+  company = "Arizona State University"
+  company_url = "https://www.asu.edu/"
+  location = "Tempe, Arizona"
+  date_start = "2008-08-01"
+  date_end = "2010-02-01"
+  description = """ """
 
 +++
