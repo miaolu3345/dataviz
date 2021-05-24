@@ -3,64 +3,40 @@
 name: Miao Lu
 
 # Username (this should match the folder name)
-title: Miao lu
+title: Miao Lu
 authors:
 - miaolu
 
 # Is this the primary user of the site?
 superuser: true
 
-bio: I'm a developmental psychologist, former NIH Principal Investigator, and autism researcher who loves programming.
+bio: I'm a Data analyst, a student in SMU, and a former software tester.
 education:
   courses:
-  - course: PhD in Developmental Psychology & Quantitative Methods
-    institution: Vanderbilt University
-    year: 2008
-  - course: MSc in Developmental Psychology
-    institution: Vanderbilt University
-    year: 2005
-  - course: BSc in Applied Psychology
-    institution: Georgia Institute of Technology
-    year: 2002
+  - course: MSc in Data analytics
+    institution: Singapore Management University
+    year: 2020-2021
+  - course: BSc in Telecommunication
+    institution: Hangzhou Dianzi University
+    year: 2011-2015
 email: ""
 interests:
-- Knowledge sharing
-- Mentoring
-- Data analysis
-- Data visualization
-- Machine learning
-- Literate programming
+- Playing Pingpang
+- Cooking
+- Hiking
+
 
 organizations:
-- name: RStudio
-  url: https://www.rstudio.com
+- name: Singpapore Management Unversity
+  url: https://www.smu.edu.sg/
   
-role: Data Scientist & Professional Educator
 
 social:
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/apreshill
-- icon: github
-  icon_pack: fab
-  link: https://github.com/apreshill
-- icon: impactstory
-  icon_pack: ai
-  link: https://impactstory.org/u/0000-0002-8082-1890
-- icon: orcid
-  icon_pack: ai
-  link: http://orcid.org/0000-0002-8082-1890
-- icon: linkedin-in
-  icon_pack: fab
-  link: https://www.linkedin.com/in/alisonpresmaneshill/
-- icon: keybase
-  icon_pack: fab
-  link: https://keybase.io/alisonhill
-- icon: google-scholar
-  icon_pack: ai
-  link: https://scholar.google.com/citations?user=yGD9V6MAAAAJ&hl=en
+
 ---
 
-I am a PhD data scientist and professional educator at RStudio. I am an international keynote [speaker](/talks), [award-winning educator](/resume/#accomplishments), and co-author of the book [*blogdown: Creating Websites with R Markdown*](https://bookdown.org/yihui/blogdown/). I love creating [unique platforms](/projects) for sharing knowledge and data-driven insights, from websites to presentations and everything in between. I am known for being a compassionate leader and enthusiastic collaborator, and for making user-facing experiences that engage and delight.
+I am a student in Singapore Management University pursuing Master degree in school of computing and information system. I had 4-year working experience including half-year experience as a intern of data analyst.
+
+data scientist and professional educator at RStudio. I am an international keynote [speaker](/talks), [award-winning educator](/resume/#accomplishments), and co-author of the book [*blogdown: Creating Websites with R Markdown*](https://bookdown.org/yihui/blogdown/). I love creating [unique platforms](/projects) for sharing knowledge and data-driven insights, from websites to presentations and everything in between. I am known for being a compassionate leader and enthusiastic collaborator, and for making user-facing experiences that engage and delight.
 
 

@@ -81,7 +81,7 @@ edit_page = {repo_url = "https://github.com/gcushen/hugo-academic", content_dir 
 ############################
 
 # Enter contact details (optional). To hide a field, clear it to "".
-email = "apresstats@gmail.com"
+email = ""
 phone = ""
 
 # Address
@@ -119,7 +119,7 @@ contact_links = [
 sharing_image = "pom-card.png"
 
 # Twitter username (without @). Used when a visitor shares your site on Twitter.
-twitter = "apreshill"
+twitter = ""
 
 ############################
 ## Regional Settings
