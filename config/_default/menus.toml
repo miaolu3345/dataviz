@@ -5,13 +5,13 @@
 
 
 [[main]]
-  name = "Home"
-  url = "/post"
+  name = "Blog"
+  url = "/blog"
   weight = 10
 
 [[main]]
   name = "Makeover"
-  url = "/talks"
+  url = "/makeover"
   weight = 20
 
 [[main]]
@@ -23,11 +23,6 @@
   name = "Resume"
   url = "/resume"
   weight = 40
-
-[[main]]
-  name = "About"
-  url = "/about"
-  weight = 50
   
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
