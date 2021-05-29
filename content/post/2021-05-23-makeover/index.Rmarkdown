@@ -75,7 +75,7 @@ Since we need to compare the trading value based on countries instead of region.
  + Rename the field name 
 ![](modify_name_and_variable_type.png)
 
-## 5.3 Visualization
+## 5.3 Line graph visualization
 
 Once two tables are done with the 2 steps above, import them into tableau.
 
@@ -87,7 +87,9 @@ Blend 2 data by linking Data relationship and country relationship between two t
 A sign will appear next to the linked column in primary data.
 ![](relationship_link_label.png)
 
- + Drag ‘Date’ into column and sum (import value) , then drag the sum (export value) into  the same position.
+ + Line graph plot 
+ 
+ Drag ‘Date’ into column and sum (import value) into row , then drag the sum (export value) into  row as well.
  
 ![](column_and_rows.png)
 
@@ -103,10 +105,12 @@ The initial colors in the filter are shown like the picture below.
 ![](initial_filter_color.png)
 I add a reference line in each graph to determine the hue of line:
 
-1) The countries whose export number is more than 100M will be set as red hue.
+1) The countries whose export number is more than 10M will be set as red hue.
 2) The countries whose export number is less than 10M will set as blue hue.
 Then the colors are set like the picture below.
 ![](optimal_color.png)
+To make the break line clear, I also add a ink line in the graph which in just equal to 10M.
+![](ink_line.png)
 
  + Rename titles and axis.
  
@@ -114,10 +118,56 @@ Then the colors are set like the picture below.
 Y-axis title was changed as ‘Import Value (1000 \$)’ and ‘Export Value (1000$),
 X-axis title was removed.
 
-## 5.4 Create proportion table
 
- + Create a new sheet in the Tableau workbook.
- + Drag countries into rows and drag import value into rows, change calculation as sum().
+## 5.4 Table visualisation
+
+ + Create calculation fields
+ 
+ To better comparison, created a new calculation field named "2019 import value" to only include the import happened in 2019.In this case, I just demonstrate the import value, I did the same calculation for export value as well.
+ ![](2019_import_value.png)
+ Repeat the same "if-then" function to create other column named "2020 import value".
+ 
+  + Create the table
+  
+   1) Drag the countries into the row, drag the year of Date into the column.
+  
+   2) Filter the countries to only include the six countries, and filter Date to only include 2019 and 2020.
+  
+   3) Drag the import value into the color and also drag it into the text in mark pane. 
+  
+   4) To make the hue of dashboard look consistent, I just set the import table as Red background and set the export table as Blue background.
+  
+   5) Modify the number unit as M(million), after all steps below, the table is shown as the picture below:
+ ![](2019_import_table.png)
+ One thing worth mentioning is that I just demonstrate import table step by step, I also created the same type of table for export table as well, and the table is shown as the picture below:
+  ![](2020_export_table.png)
+
+# 5.5 Create growth table
+
+To purly see the trend between 2019 and 2020 (up/down), I also created a table to see the growth by year.
+
+ + Create several new calculation fields
+ 
+Create a new calculation field named "growh %" to see the changes of import value from 2019 to 2020.
+![](growth.png)
+ Then create another calculation field named "up/dowm" to mark whether the growth is positive or negative.
+ ![](up_down.png)
+ 
+ + Created the growth table
+ 
+  1) Drag countries into the row, filter countries to only include six countries.
+  
+  2) Drag "growth %" to the text, drag "up/down" into the color area as well as shape area in the mark pane.
+ ![](up_down_in_marks.png)
+  3) To make people understand the up/down trend, set the "up" as upwards trangle and "down" as downward triangle.
+  ![](shape_of_up_down.png)
+  
+  4) Similarly, change the color as red and green respectively.
+  ![](color_of_up_down.png)
+ After all steps above, the table is shown as the picture below:
+   ![](growth_table.png)
+ 
+ Drag countries into rows and drag import value into rows, change calculation as sum().
  + Change the way of showcase to ‘highlight table’.
 ![](show_way.png)
  + Change the value shown as percentage
