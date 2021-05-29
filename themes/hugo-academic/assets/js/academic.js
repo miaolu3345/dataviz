@@ -364,12 +364,13 @@
         if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
           // The visitor prefers dark themes and switching to the dark variation is allowed by admin.
           isDarkTheme = 1;
-        } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        } else (window.matchMedia('(prefers-color-scheme: light)').matches) {
           // The visitor prefers light themes and switching to the dark variation is allowed by admin.
           isDarkTheme = 0;
-        } else {
-          isDarkTheme = isSiteThemeDark;  // Use the site's default theme variation based on `light` in the theme file.
         }
+        //  else {
+        //   isDarkTheme = isSiteThemeDark;  // Use the site's default theme variation based on `light` in the theme file.
+        // }
         console.info('User changed theme variation to Auto.');
         showActiveTheme(1);
         break;
@@ -582,9 +583,9 @@
 
     // Initialise code highlighting if enabled for this page.
     // Note: this block should be processed after the Mermaid code-->div conversion.
-    if (code_highlighting) {
-      hljs.initHighlighting();
-    }
+    // if (code_highlighting) {
+    //   hljs.initHighlighting();
+    // }
 
     // Initialize theme variation.
     initThemeVariation();
