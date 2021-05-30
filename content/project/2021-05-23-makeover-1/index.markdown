@@ -143,7 +143,7 @@ X-axis title was removed.
 
 ## 5.5 Create growth table
 
-To purly see the trend between 2019 and 2020 (up/down), I also created a table to see the growth by year.
+To purely see the trend between 2019 and 2020 (up/down), I also created a table to see the growth by year.
 
  + Create several new calculation fields
  
@@ -166,30 +166,18 @@ Create a new calculation field named "growh %" to see the changes of import valu
  After all steps above, the table is shown as the picture below:
    ![](growth_table.png)
  
- Drag countries into rows and drag import value into rows, change calculation as sum().
- + Change the way of showcase to ‘highlight table’.
-![](show_way.png)
- + Change the value shown as percentage
- 
- Right click on the sum (import value) > quick table calculation > percent of total.
- ![](percent_of_total.png)
- 
- + Rename header and repeat the same step to create import value table.
-  
- ![](final_table_import.png)
-
 ## 5.6 Dashboard visualization
 
  + Add sheets
  
- Drag line graph into the left and drag two tables int the right.
+ Drag line graph into the bottom area and drag 4 tables into the top area.
  
   + Add source
 
 Using Object > Text > drag text to the bottom, then add the source and the raw data link.
 
 The final dashboard would be shown like the picture below.
- ![](merchandise.png)
+ ![](over_all_look.png)
  
 # 6. Insights from new graph
  
