@@ -141,7 +141,7 @@ X-axis title was removed.
  One thing worth mentioning is that I just demonstrate import table step by step, I also created the same type of table for export table as well, and the table is shown as the picture below:
   ![](2020_export_table.png)
 
-# 5.5 Create growth table
+## 5.5 Create growth table
 
 To purly see the trend between 2019 and 2020 (up/down), I also created a table to see the growth by year.
 
