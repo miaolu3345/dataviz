@@ -25,7 +25,7 @@ The DataViz Makeover-1 report aims to optimize the original graph by using the d
  
 # 2. Clarity
 
- In this section, the origincal data will be implement makeover based on clarity dimension.
+ In this section, the original data will implemente makeover based on clarity dimension.
  
   
   Index         |       Critiques      |  Improvement
@@ -38,7 +38,7 @@ The DataViz Makeover-1 report aims to optimize the original graph by using the d
 
 # 3. Aesthentics
 
-In this section, the origincal data will be implement makeover based on Aesthentics dimension.
+In this section, the origincal data will be implement makeover based on Aesthetics dimension.
 
   Index         |       Critiques      |  Improvement
 ------------- | ---------------------- | ----------------
@@ -71,16 +71,17 @@ Since we need to compare the trading value based on countries instead of region.
 ![](remove_precious_years_data.png)
  + Select all remaining years in the data, right click and select ‘Pivot’.
 ![](pivot_data.png)
- + Rename the field name 
+ + Rename the field name and modify the type of data
 ![](modify_name_and_variable_type.png)
+ + Split the country column up to get the pure country name and rename this column as countries
 
 ## 5.3 Line graph visualization
 
-Once two tables are done with the 2 steps above, import them into tableau.
+Once two tables are done with the steps above, import them into tableau.
 
  +	Data blending
  
-Blend 2 data by linking Data relationship and country relationship between two tables.
+Blend 2 data source by linking Data relationship and country relationship between two tables.
 ![](data_blending.png)
 ![](data_blending_setup.png)
 A sign will appear next to the linked column in primary data.
@@ -94,18 +95,19 @@ A sign will appear next to the linked column in primary data.
 
  + Apply filter
  
-Drag either one of country in two table into the filter position (since two country columns are linked). Select particular 6 country in the list.
+Drag either one of countries column in two tables into the filter position (since two country columns are linked). Select particular 6 countries in the list.
 ![](filter_and_add.png)
 
  + Apply color
  
-Drag country into ‘color’ in the pane, since there are lots of countries in the column, so we need to filter first then add. Check the particular 6 countries, then select ok.
+Drag country into ‘color’ in the marks pane, since there are lots of countries in the column, so we need to filter first then add. Check the particular 6 countries, then select ok.
 The initial colors in the filter are shown like the picture below.
 ![](initial_filter_color.png)
 I add a reference line in each graph to determine the hue of line:
 
 1) The countries whose export number is more than 10M will be set as red hue.
 2) The countries whose export number is less than 10M will set as blue hue.
+
 Then the colors are set like the picture below.
 ![](optimal_color.png)
 To make the break line clear, I also add a ink line in the graph which in just equal to 10M.
@@ -113,8 +115,8 @@ To make the break line clear, I also add a ink line in the graph which in just e
 
  + Rename titles and axis.
  
- Title was changed as ‘Merchandise Trade of Six Countries, 2019-2021),
-Y-axis title was changed as ‘Import Value (1000 \$)’ and ‘Export Value (1000$),
+ Title was changed as "Merchandise Trade of Six Countries, 2019-2021",
+Y-axis title was changed as "Import Value (1000 \$)" and "Export Value (1000$)",
 X-axis title was removed.
 
 
@@ -122,21 +124,21 @@ X-axis title was removed.
 
  + Create calculation fields
  
- To better comparison, created a new calculation field named "2019 import value" to only include the import happened in 2019.In this case, I just demonstrate the import value, I did the same calculation for export value as well.
+ For better comparison, created a new calculation field named "2019 import value" to only include the import happened in 2019.In this case, I just demonstrate the import value, I did the same calculation for export value as well.
  ![](2019_import_value.png)
  Repeat the same "if-then" function to create other column named "2020 import value".
  
   + Create the table
   
-   1) Drag the countries into the row, drag the year of Date into the column.
+1) Drag the countries into the row, drag the year of Date into the column.
   
-   2) Filter the countries to only include the six countries, and filter Date to only include 2019 and 2020.
+2) Filter the countries to only include the six countries, and filter Date to only include 2019 and 2020.
   
-   3) Drag the import value into the color and also drag it into the text in mark pane. 
+3) Drag the import value into the color and also drag it into the text in mark pane. 
   
-   4) To make the hue of dashboard look consistent, I just set the import table as Red background and set the export table as Blue background.
+4) To make the hue of dashboard look consistent, I just set the import table as Red background and set the export table as Blue background.
   
-   5) Modify the number unit as M(million), after all steps below, the table is shown as the picture below:
+5) Modify the number unit as M(million), after all steps below, the table is shown as the picture below:
  ![](2019_import_table.png)
  One thing worth mentioning is that I just demonstrate import table step by step, I also created the same type of table for export table as well, and the table is shown as the picture below:
   ![](2020_export_table.png)
@@ -154,14 +156,14 @@ Create a new calculation field named "growh %" to see the changes of import valu
  
  + Created the growth table
  
-  1) Drag countries into the row, filter countries to only include six countries.
+1) Drag countries into the row, filter countries to only include six countries.
   
-  2) Drag "growth %" to the text, drag "up/down" into the color area as well as shape area in the mark pane.
+2) Drag "growth %" to the text, drag "up/down" into the color area as well as shape area in the mark pane.
  ![](up_down_in_marks.png)
-  3) To make people understand the up/down trend, set the "up" as upwards trangle and "down" as downward triangle.
+3) To make people understand the up/down trend, set the "up" as upwards trangle and "down" as downward triangle.
   ![](shape_of_up_down.png)
   
-  4) Similarly, change the color as red and green respectively.
+4) Similarly, change the color as red and green respectively.
   ![](color_of_up_down.png)
  After all steps above, the table is shown as the picture below:
    ![](growth_table.png)
