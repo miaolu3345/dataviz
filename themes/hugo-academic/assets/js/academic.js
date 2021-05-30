@@ -359,21 +359,20 @@
         console.info('User changed theme variation to Dark.');
         showActiveTheme(0);
         break;
-      case 1:
-        localStorage.setItem('dark_mode', '2');
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          // The visitor prefers dark themes and switching to the dark variation is allowed by admin.
-          isDarkTheme = 1;
-        } else (window.matchMedia('(prefers-color-scheme: light)').matches) {
-          // The visitor prefers light themes and switching to the dark variation is allowed by admin.
-          isDarkTheme = 0;
-        }
-        //  else {
-        //   isDarkTheme = isSiteThemeDark;  // Use the site's default theme variation based on `light` in the theme file.
-        // }
-        console.info('User changed theme variation to Auto.');
-        showActiveTheme(1);
-        break;
+      // case 1:
+      //   localStorage.setItem('dark_mode', '2');
+      //   if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      //     // The visitor prefers dark themes and switching to the dark variation is allowed by admin.
+      //     isDarkTheme = 1;
+      //   } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+      //     // The visitor prefers light themes and switching to the dark variation is allowed by admin.
+      //     isDarkTheme = 0;
+      //   } else {
+      //     isDarkTheme = isSiteThemeDark;  // Use the site's default theme variation based on `light` in the theme file.
+      //   }
+      //   console.info('User changed theme variation to Auto.');
+      //   showActiveTheme(1);
+      //   break;
       default:
         localStorage.setItem('dark_mode', '0');
         isDarkTheme = 0;
@@ -408,9 +407,9 @@
   }
 
   function getThemeVariation() {
-    if (!canChangeTheme()) {
-      return isSiteThemeDark;  // Use the site's default theme variation based on `light` in the theme file.
-    }
+    // if (!canChangeTheme()) {
+    //   return isSiteThemeDark;  // Use the site's default theme variation based on `light` in the theme file.
+    // }
     let currentThemeMode = getThemeMode();
     let isDarkTheme;
     switch (currentThemeMode) {

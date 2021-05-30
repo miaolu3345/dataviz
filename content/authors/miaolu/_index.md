@@ -37,6 +37,4 @@ social:
 
 I am a student in Singapore Management University pursuing Master degree in school of computing and information system. I had 4-year working experience including half-year experience as a intern of data analyst.
 
-data scientist and professional educator at RStudio. I am an international keynote [speaker](/talks), [award-winning educator](/resume/#accomplishments), and co-author of the book [*blogdown: Creating Websites with R Markdown*](https://bookdown.org/yihui/blogdown/). I love creating [unique platforms](/projects) for sharing knowledge and data-driven insights, from websites to presentations and everything in between. I am known for being a compassionate leader and enthusiastic collaborator, and for making user-facing experiences that engage and delight.
-
 

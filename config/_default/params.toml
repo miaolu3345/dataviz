@@ -44,7 +44,7 @@ local_business_type = ""
 org_name = ""
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
-description = "A data analytics blog and portfolio by Miao Lu"
+description = ""
 
 ############################
 ## Site Features
@@ -126,8 +126,7 @@ twitter = ""
 ############################
 
 # Date and time format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
-#   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
-date_format = "Jan 2, 2006"
+date_format = "Jan 2, 2021"
 #   Examples: "3:04 pm" or "15:04"
 time_format = "3:04 PM"
 
@@ -182,8 +181,7 @@ plugins_js  = []
 # Configuration of publication pages.
 [publications]
   # Date format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
-  #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
-  date_format = "January 2006"
+  date_format = "January 2021"
 
   # Citation style ("apa" or "mla")
   citation_style = "apa"

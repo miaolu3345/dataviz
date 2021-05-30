@@ -20,17 +20,17 @@ date_format = "Jan 2006"
 
 [[item]]
   organization = "Singapore Management University"
-  organization_url = ""
+  organization_url = "https://www.smu.edu.sg/"
   title = "Data analytics"
   url = ""
-  certificate_url = "https://www.smu.edu.sg/"
+  certificate_url = ""
   date_start = "2020-08-20"
-  date_end = "2020-08-20"
+  date_end = "2021-08-20"
   description = "Major courses: Python, R, SQL, Excel, NLP."
 
 [[item]]
   organization = "Hangzhou Dianzi University"
-  organization_url = "http://www.hdu.edu.cn/"
+  organization_url = "https://www.hdu.edu.cn/"
   title = "Telecommunication"
   url = ""
   certificate_url = ""

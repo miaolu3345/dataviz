@@ -2,13 +2,14 @@
 title: DataViz Makeover - 1
 categories:
   - Makeover
+  - course
 tags:
-  - blogdown
-  - Makeover
+  - R
+  - course
 subtitle: ''
 summary: ''
 authors: [Miao Lu]
-date: '2021-05-26'
+date: '2021-05-23'
 featured: no
 disable_jquery: no
 image:
