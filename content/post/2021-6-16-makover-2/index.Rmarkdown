@@ -189,17 +189,17 @@ X-axis title was changed as ‘Percentile of Export Value’.
 
 
 
-## 5.4 Barchart visualisation
+## 5.4 Bar chart visualisation
 
 The bar chart aims to compare the import value and export value in particular country/area.
 
- + Drag sum(import value_final) and sum(export_value_final) to column and drag country to row.
+ + Drag sum(import value_final) and sum(export value_final) to column and drag country to row.
  
  + Right click the x-axis of import value, check reverse box.
 ![](reverse_chart.png)
  + Drag import value and export value to color respectively.
 ![](drag_to_color.png)
- + Add balance bar chart
+ + Add balance field
 
 create a new calculation field named balance, the formula is shown as below.
 
@@ -221,7 +221,21 @@ created the other new field named balance-color, the formula is shown as below.
  Drag the month(date) to page area so that I can see the changes of graph over time.
  
 
-## 5.5 Dashboard visualization
+## 5.5 Time series of balance
+
+ + Drag balance to rows and drag month(date) to column, change the format of balance like the picture below.
+ 
+ ![](format_of_balance.png)
+ 
+ + Add animation and filter
+ 
+ Drag year(date) to filter, set the time period is from 2011 to 2020, consistent with other sheets. Drag month(date) to page so that the animation control in dashboard can be applied to the chart.
+ 
+ ![](animation_time.png)
+
+
+
+## 5.6 Dashboard visualization
 
  + Apply country filter to all sheets
 
@@ -237,7 +251,7 @@ Right click country filter, click on apply to worksheet, select all using this d
  
  The final dashboard would be shown like the picture below.
  
- ![](final_dashboard.png)
+ ![](dashboard1.png)
  
  
 # 6. Insights from new graph
@@ -247,7 +261,7 @@ Right click country filter, click on apply to worksheet, select all using this d
   Europe has always been the top ranking importer over past 10 years. And the import value was always larger than export value.
  ![](ranking_by_import_value.png)
  
- In 2016 May, the export increased significantly even equal to import value,and 2 values are ranking 1 at the same time. The next few month of 2016, the gap between import value and export value remain small. After 2016, the gap returned to a relative large degree as normal.
+ In 2016 May, the export increased significantly even equal to import value,and 2 values are ranking 1 at the same time. The next few months of 2016, the gap between import value and export value remain small. After 2016, the gap returned to a relative large degree as normal.
  
 ![](ranking_equal_europe.png)
  
@@ -266,4 +280,4 @@ Right click country filter, click on apply to worksheet, select all using this d
 
 ![](may_2015_indo.png)
  
- + Maylasia: The import value of Malysia used to be the top ranking until 2014, Mainland China caught up and exceed Malaysia. But the balance between import value and export value remain unchanged -- more or less than 1 billion.
+ + Malaysia: The import value of Malaysia used to be the top ranking until 2014, Mainland China caught up and exceed Malaysia. But the balance between import value and export value remain unchanged -- more or less than 1 billion.
