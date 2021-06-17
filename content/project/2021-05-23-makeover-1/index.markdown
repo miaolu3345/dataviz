@@ -2,9 +2,10 @@
 title: DataViz Makeover - 1
 categories:
   - Makeover
+  - course
 tags:
-  - blogdown
-  - Makeover
+  - R
+  - course
 subtitle: ''
 summary: ''
 authors: [Miao Lu]
@@ -94,12 +95,12 @@ A sign will appear next to the linked column in primary data.
 
  + Apply filter
  
-Drag either one of country in two table into the filter position (since two country columns are linked). Select particular 6 country in the list.
+Drag either one of countries in two data source into the filter position (since two country columns are linked). Select particular 6 country in the list.
 ![](filter_and_add.png)
 
  + Apply color
  
-Drag country into ‘color’ in the pane, since there are lots of countries in the column, so we need to filter first then add. Check the particular 6 countries, then select ok.
+Drag countries into ‘color’ in the marks pane, since there are lots of countries in the column, so we need to filter first then add. Check the particular 6 countries, then select ok.
 The initial colors in the filter are shown like the picture below.
 ![](initial_filter_color.png)
 I add a reference line in each graph to determine the hue of line:
@@ -113,8 +114,8 @@ To make the break line clear, I also add a ink line in the graph which in just e
 
  + Rename titles and axis.
  
- Title was changed as ‘Merchandise Trade of Six Countries, 2019-2021),
-Y-axis title was changed as ‘Import Value (1000 \$)’ and ‘Export Value (1000$),
+ Title was changed as 'Merchandise Trade of Six Countries, 2019-2020',
+Y-axis title was changed as 'Import Value (1000 \$)' and 'Export Value (1000$)',
 X-axis title was removed.
 
 
@@ -122,28 +123,28 @@ X-axis title was removed.
 
  + Create calculation fields
  
- To better comparison, created a new calculation field named "2019 import value" to only include the import happened in 2019.In this case, I just demonstrate the import value, I did the same calculation for export value as well.
+For better comparison, I created a new calculation field named "2019 import value" to only include the import happened in 2019.In this case, I just demonstrate the import value, I did the same calculation for export value as well.
  ![](2019_import_value.png)
  Repeat the same "if-then" function to create other column named "2020 import value".
  
   + Create the table
   
-   1) Drag the countries into the row, drag the year of Date into the column.
+  1) Drag the countries into the row, drag the year of Date into the column.
   
-   2) Filter the countries to only include the six countries, and filter Date to only include 2019 and 2020.
+  2) Filter the countries to only include the six countries, and filter Date to only include 2019 and 2020.
   
-   3) Drag the import value into the color and also drag it into the text in mark pane. 
+  3) Drag the import value into the color and also drag it into the text in mark pane. 
   
-   4) To make the hue of dashboard look consistent, I just set the import table as Red background and set the export table as Blue background.
+  4) To make the hue of dashboard look consistent, I just set the import table as Red background and set the export table as Blue background.
   
-   5) Modify the number unit as M(million), after all steps below, the table is shown as the picture below:
+  5) Modify the number unit as M(million), after all steps below, the table is shown as the picture below:
  ![](2019_import_table.png)
  One thing worth mentioning is that I just demonstrate import table step by step, I also created the same type of table for export table as well, and the table is shown as the picture below:
   ![](2020_export_table.png)
 
 ## 5.5 Create growth table
 
-To purely see the trend between 2019 and 2020 (up/down), I also created a table to see the growth by year.
+To purly see the trend between 2019 and 2020 (up/down), I also created a table to see the growth by year.
 
  + Create several new calculation fields
  
@@ -154,30 +155,42 @@ Create a new calculation field named "growh %" to see the changes of import valu
  
  + Created the growth table
  
-  1) Drag countries into the row, filter countries to only include six countries.
+1) Drag countries into the row, filter countries to only include six countries.
   
-  2) Drag "growth %" to the text, drag "up/down" into the color area as well as shape area in the mark pane.
+2) Drag "growth %" to the text, drag "up/down" into the color area as well as shape area in the mark pane.
  ![](up_down_in_marks.png)
-  3) To make people understand the up/down trend, set the "up" as upwards trangle and "down" as downward triangle.
+3) To make people understand the up/down trend, set the "up" as upwards trangle and "down" as downward triangle.
   ![](shape_of_up_down.png)
   
-  4) Similarly, change the color as red and green respectively.
+4) Similarly, change the color as red and green respectively.
   ![](color_of_up_down.png)
  After all steps above, the table is shown as the picture below:
    ![](growth_table.png)
  
+ Drag countries into rows and drag import value into rows, change calculation as sum().
+ + Change the way of showcase to ‘highlight table’.
+![](show_way.png)
+ + Change the value shown as percentage
+ 
+ Right click on the sum (import value) > quick table calculation > percent of total.
+ ![](percent_of_total.png)
+ 
+ + Rename header and repeat the same step to create import value table.
+  
+ ![](final_table_import.png)
+
 ## 5.6 Dashboard visualization
 
  + Add sheets
  
- Drag line graph into the bottom area and drag 4 tables into the top area.
+ Drag line graph into the left and drag two tables int the right.
  
   + Add source
 
 Using Object > Text > drag text to the bottom, then add the source and the raw data link.
 
 The final dashboard would be shown like the picture below.
- ![](over_all_look.png)
+ ![](finale_outcome_of_data.png)
  
 # 6. Insights from new graph
  
