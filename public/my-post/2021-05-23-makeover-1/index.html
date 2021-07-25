@@ -1,0 +1,1059 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Miao Lu">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="The DataViz Makeover-1 report aims to optimize the original graph by using the data from Department of Statistics in Singapore.
+1. The original data    2. Clarity    In this section, the original data will implemente makeover based on clarity dimension.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://miaolu.netlify.app/my-post/2021-05-23-makeover-1/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#06805E">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/tomorrow.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/tomorrow.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i%7CKarla:400,400i,700,700i%7CDM+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hubd7880285348c4660acc9402140a2483_242472_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hubd7880285348c4660acc9402140a2483_242472_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://miaolu.netlify.app/my-post/2021-05-23-makeover-1/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Miao Lu">
+  <meta property="og:url" content="https://miaolu.netlify.app/my-post/2021-05-23-makeover-1/">
+  <meta property="og:title" content="DataViz Makeover - 1 | Miao Lu">
+  <meta property="og:description" content="The DataViz Makeover-1 report aims to optimize the original graph by using the data from Department of Statistics in Singapore.
+1. The original data    2. Clarity    In this section, the original data will implemente makeover based on clarity dimension."><meta property="og:image" content="https://miaolu.netlify.app/my-post/2021-05-23-makeover-1/featured.png">
+  <meta property="twitter:image" content="https://miaolu.netlify.app/my-post/2021-05-23-makeover-1/featured.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2021-05-23T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2021-05-23T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>DataViz Makeover - 1 | Miao Lu</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Miao Lu</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/post"><span>Post</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/resume"><span>Resume</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article">
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>DataViz Makeover - 1</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span>Miao Lu</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    May 23, 23235
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/post/">Post</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+  
+  <div class="article-container">
+    
+    <div class="row">
+    
+    <div class="col-12 col-lg-10ish article-style">
+      <p>The DataViz Makeover-1 report aims to optimize the original graph by using the data from 
+<a href="https://www.singstat.gov.sg/find-data/search-by-theme/trade-and-investment/merchandise-trade/latest-data" target="_blank" rel="noopener">Department of Statistics in Singapore</a>.</p>
+
+
+
+<h1 id="1-the-original-data">1. The original data<a href="#1-the-original-data"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h1>
+<p><img src="original_graph.png" alt=""></p>
+
+
+
+<h1 id="2-clarity">2. Clarity<a href="#2-clarity"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h1>
+<p>In this section, the original data will implemente makeover based on clarity dimension.</p>
+<table>
+<thead>
+<tr>
+<th>Index</th>
+<th>Critiques</th>
+<th>Improvement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>The title does not clarify that the Top-6 countries are extracted based on which benchmark, the number of import trading or export trading? Which period of time?</td>
+<td>Create a subtitle to give a brief explanation.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>The title shows the period of time is from 2019 to 2020 whereas the X-axis in graph is from 2019 to 2021.</td>
+<td>Modify the period in title (2019-2021)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>The graphs plot the line year to year, but the legend is written as ‘month of period’, which is absolutely wrong.</td>
+<td>Change the legend of x-axis as ‘year of period’.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>The x-axis in Japan graph only gives one mark of year (2020), 2019 and 2021 are removed from x-axis.</td>
+<td>Include 2019 and 2021 in X-axis.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Name of category on the right is ‘Measure name’, which is not very clear</td>
+<td>Rename the title of category as ‘Trading type’</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<h1 id="3-aesthentics">3. Aesthentics<a href="#3-aesthentics"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h1>
+<p>In this section, the origincal data will be implement makeover based on Aesthetics dimension.</p>
+<table>
+<thead>
+<tr>
+<th>Index</th>
+<th>Critiques</th>
+<th>Improvement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>The shading would make people unable to differentiate which line is export and which line is import.</td>
+<td>Make the area under the line blank rather than filled them up with color.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>The unit length of Y-axis is different from one to another, which is not clear for comparison.</td>
+<td>Standardize the unit length of Y-axis (for example 1 million)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Each graph has different width, which looks inconsistent. It is also difficult to compare.</td>
+<td>Set the graphs to keep the same width.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>The 6 graph is sorted in a random order instead of a logical way, which is not very suitable for people to compare.</td>
+<td>Use one of dimension to sort them.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>The x-axis marks are removed which is difficult to detect a clear boundary between each year.</td>
+<td>Mark each year in x-axis.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<h1 id="4-porposed-design">4. Porposed Design<a href="#4-porposed-design"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h1>
+<p><img src="sketch.png" alt=""></p>
+
+
+
+<h2 id="41-the-advantages-of-sketch">4.1 The advantages of sketch<a href="#41-the-advantages-of-sketch"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h2>
+<ul>
+<li>Split the export value and import value up for separate comparison.</li>
+<li>Include quarter marks in x-axis to have a long x-axis so that people can see the detailed changes of value over time.</li>
+<li>Include the average value for comparison.</li>
+</ul>
+
+
+
+<h1 id="5-detail-steps-of-visualization">5. Detail steps of visualization<a href="#5-detail-steps-of-visualization"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h1>
+
+
+
+<h2 id="51-data-preprocessing-in-excel">5.1 Data preprocessing in excel<a href="#51-data-preprocessing-in-excel"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h2>
+<p>There are several rows on top of table which is unnecessary in data, so I removed them from excel.
+<img src="unneccessary_title_in_data.png" alt="">
+Since we need to compare the trading value based on countries instead of region. The first 6 rows show total value based on continents, so I removed them also.
+<img src="remove_continent.png" alt=""></p>
+
+
+
+<h2 id="52-data-preprocessing-in-tableau">5.2 Data preprocessing in Tableau<a href="#52-data-preprocessing-in-tableau"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h2>
+<ul>
+<li>Import two tables of data one by one into Tableau, remove the columns not in 2019-2021.
+<img src="remove_precious_years_data.png" alt=""></li>
+<li>Select all remaining years in the data, right click and select ‘Pivot’.
+<img src="pivot_data.png" alt=""></li>
+<li>Rename the field name and modify the type of data
+<img src="modify_name_and_variable_type.png" alt=""></li>
+<li>Split the country column up to get the pure country name and rename this column as countries</li>
+</ul>
+
+
+
+<h2 id="53-line-graph-visualization">5.3 Line graph visualization<a href="#53-line-graph-visualization"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h2>
+<p>Once two tables are done with the steps above, import them into tableau.</p>
+<ul>
+<li>Data blending</li>
+</ul>
+<p>Blend 2 data source by linking Data relationship and country relationship between two tables.
+<img src="data_blending.png" alt="">
+<img src="data_blending_setup.png" alt="">
+A sign will appear next to the linked column in primary data.
+<img src="relationship_link_label.png" alt=""></p>
+<ul>
+<li>Line graph plot</li>
+</ul>
+<p>Drag ‘Date’ into column and sum (import value) into row , then drag the sum (export value) into  row as well.</p>
+<p><img src="column_and_rows.png" alt=""></p>
+<ul>
+<li>Apply filter</li>
+</ul>
+<p>Drag either one of countries column in two tables into the filter position (since two country columns are linked). Select particular 6 countries in the list.
+<img src="filter_and_add.png" alt=""></p>
+<ul>
+<li>Apply color</li>
+</ul>
+<p>Drag country into ‘color’ in the marks pane, since there are lots of countries in the column, so we need to filter first then add. Check the particular 6 countries, then select ok.
+The initial colors in the filter are shown like the picture below.
+<img src="initial_filter_color.png" alt="">
+I add a reference line in each graph to determine the hue of line:</p>
+<ol>
+<li>The countries whose export number is more than 10M will be set as red hue.</li>
+<li>The countries whose export number is less than 10M will set as blue hue.</li>
+</ol>
+<p>Then the colors are set like the picture below.
+<img src="optimal_color.png" alt="">
+To make the break line clear, I also add a ink line in the graph which in just equal to 10M.
+<img src="ink_line.png" alt=""></p>
+<ul>
+<li>Rename titles and axis.</li>
+</ul>
+<p>Title was changed as &ldquo;Merchandise Trade of Six Countries, 2019-2021&rdquo;,
+Y-axis title was changed as &ldquo;Import Value (1000 $)&rdquo; and &ldquo;Export Value (1000$)&rdquo;,
+X-axis title was removed.</p>
+
+
+
+<h2 id="54-table-visualisation">5.4 Table visualisation<a href="#54-table-visualisation"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h2>
+<ul>
+<li>Create calculation fields</li>
+</ul>
+<p>For better comparison, created a new calculation field named &ldquo;2019 import value&rdquo; to only include the import happened in 2019.In this case, I just demonstrate the import value, I did the same calculation for export value as well.
+<img src="2019_import_value.png" alt="">
+Repeat the same &ldquo;if-then&rdquo; function to create other column named &ldquo;2020 import value&rdquo;.</p>
+<ul>
+<li>Create the table</li>
+</ul>
+<ol>
+<li>
+<p>Drag the countries into the row, drag the year of Date into the column.</p>
+</li>
+<li>
+<p>Filter the countries to only include the six countries, and filter Date to only include 2019 and 2020.</p>
+</li>
+<li>
+<p>Drag the import value into the color and also drag it into the text in mark pane.</p>
+</li>
+<li>
+<p>To make the hue of dashboard look consistent, I just set the import table as Red background and set the export table as Blue background.</p>
+</li>
+<li>
+<p>Modify the number unit as M(million), after all steps below, the table is shown as the picture below:
+<img src="2019_import_table.png" alt="">
+One thing worth mentioning is that I just demonstrate import table step by step, I also created the same type of table for export table as well, and the table is shown as the picture below:
+<img src="2020_export_table.png" alt=""></p>
+</li>
+</ol>
+
+
+
+<h2 id="55-create-growth-table">5.5 Create growth table<a href="#55-create-growth-table"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h2>
+<p>To purely see the trend between 2019 and 2020 (up/down), I also created a table to see the growth by year.</p>
+<ul>
+<li>Create several new calculation fields</li>
+</ul>
+<p>Create a new calculation field named &ldquo;growh %&rdquo; to see the changes of import value from 2019 to 2020.
+<img src="growth.png" alt="">
+Then create another calculation field named &ldquo;up/dowm&rdquo; to mark whether the growth is positive or negative.
+<img src="up_down.png" alt=""></p>
+<ul>
+<li>Created the growth table</li>
+</ul>
+<ol>
+<li>
+<p>Drag countries into the row, filter countries to only include six countries.</p>
+</li>
+<li>
+<p>Drag &ldquo;growth %&rdquo; to the text, drag &ldquo;up/down&rdquo; into the color area as well as shape area in the mark pane.
+<img src="up_down_in_marks.png" alt=""></p>
+</li>
+<li>
+<p>To make people understand the up/down trend, set the &ldquo;up&rdquo; as upwards trangle and &ldquo;down&rdquo; as downward triangle.
+<img src="shape_of_up_down.png" alt=""></p>
+</li>
+<li>
+<p>Similarly, change the color as red and green respectively.
+<img src="color_of_up_down.png" alt="">
+After all steps above, the table is shown as the picture below:
+<img src="growth_table.png" alt=""></p>
+</li>
+</ol>
+
+
+
+<h2 id="56-dashboard-visualization">5.6 Dashboard visualization<a href="#56-dashboard-visualization"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h2>
+<ul>
+<li>Add sheets</li>
+</ul>
+<p>Drag line graph into the bottom area and drag 4 tables into the top area.</p>
+<ul>
+<li>Add source</li>
+</ul>
+<p>Using Object &gt; Text &gt; drag text to the bottom, then add the source and the raw data link.</p>
+<p>The final dashboard would be shown like the picture below.
+<img src="over_all_look.png" alt=""></p>
+
+
+
+<h1 id="6-insights-from-new-graph">6. Insights from new graph<a href="#6-insights-from-new-graph"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h1>
+<ul>
+<li>Japan and Taiwan have the similar flat trend in terms of Export value changes over time.</li>
+<li>Mainland China has the most value in both export and import most of time.</li>
+<li>Hong Kong has a very large number of export value during 2 years whereas, in comparison to import value, it has the least import value.</li>
+<li>For United States, we can see a downward trend both in import and export.</li>
+</ul>
+
+    </div>
+    
+    <div class="col-12 col-lg-2ish docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-the-original-data">1. The original data</a></li>
+    <li><a href="#2-clarity">2. Clarity</a></li>
+    <li><a href="#3-aesthentics">3. Aesthentics</a></li>
+    <li><a href="#4-porposed-design">4. Porposed Design</a>
+      <ul>
+        <li><a href="#41-the-advantages-of-sketch">4.1 The advantages of sketch</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-detail-steps-of-visualization">5. Detail steps of visualization</a>
+      <ul>
+        <li><a href="#51-data-preprocessing-in-excel">5.1 Data preprocessing in excel</a></li>
+        <li><a href="#52-data-preprocessing-in-tableau">5.2 Data preprocessing in Tableau</a></li>
+        <li><a href="#53-line-graph-visualization">5.3 Line graph visualization</a></li>
+        <li><a href="#54-table-visualisation">5.4 Table visualisation</a></li>
+        <li><a href="#55-create-growth-table">5.5 Create growth table</a></li>
+        <li><a href="#56-dashboard-visualization">5.6 Dashboard visualization</a></li>
+      </ul>
+    </li>
+    <li><a href="#6-insights-from-new-graph">6. Insights from new graph</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+  </div>
+    <div class="col-12 col-lg-10ish article-style">
+    <script src="https://utteranc.es/client.js"
+        repo="rbind/apreshill"
+        issue-term="title"
+        label="comments :crystal_ball:"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+    </script>
+    </div>
+  
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/blogdown/">blogdown</a>
+  
+  <a class="badge badge-light" href="/tags/post/">Post</a>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.25390bf411807b5f129db73da3b7a845.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+
+
+  <p class="powered-by">
+    
+
+    Made with the <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i> </a><a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a> package, and the 
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

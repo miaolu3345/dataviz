@@ -1,10 +1,10 @@
 ---
 title: DataViz Makeover - 2
 categories:
-  - Makeover
+  - Post
 tags:
   - blogdown
-  - Makeover
+  - Post
 subtitle: ''
 summary: ''
 authors: [Miao Lu]

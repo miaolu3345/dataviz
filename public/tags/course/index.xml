@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>course | Miao Lu</title>
+    <link>https://miaolu.netlify.app/tags/course/</link>
+      <atom:link href="https://miaolu.netlify.app/tags/course/index.xml" rel="self" type="application/rss+xml" />
+    <description>course</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 23 May 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://miaolu.netlify.app/img/pom-card.png</url>
+      <title>course</title>
+      <link>https://miaolu.netlify.app/tags/course/</link>
+    </image>
+    
+    <item>
+      <title>DataViz Makeover - 1</title>
+      <link>https://miaolu.netlify.app/project/2021-05-23-makeover-1/</link>
+      <pubDate>Sun, 23 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://miaolu.netlify.app/project/2021-05-23-makeover-1/</guid>
+      <description>&lt;p&gt;The DataViz Makeover-1 report aims to optimize the original graph by using the data from 
+&lt;a href=&#34;https://www.singstat.gov.sg/find-data/search-by-theme/trade-and-investment/merchandise-trade/latest-data&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Department of Statistics in Singapore&lt;/a&gt;.&lt;/p&gt;
+
+
+
+&lt;h1 id=&#34;1-the-original-data&#34;&gt;1. The original data&lt;a href=&#34;#1-the-original-data&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;original_graph.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+
+
+&lt;h1 id=&#34;2-clarity&#34;&gt;2. Clarity&lt;a href=&#34;#2-clarity&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;In this section, the origincal data will be implement makeover based on clarity dimension.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Index&lt;/th&gt;
+&lt;th&gt;Critiques&lt;/th&gt;
+&lt;th&gt;Improvement&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;The title does not clarify that the Top-6 countries are extracted based on which benchmark, the number of import trading or export trading? Which period of time?&lt;/td&gt;
+&lt;td&gt;Create a subtitle to give a brief explanation.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;The title shows the period of time is from 2019 to 2020 whereas the X-axis in graph is from 2019 to 2021.&lt;/td&gt;
+&lt;td&gt;Modify the period in title (2019-2021)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;The graphs plot the line year to year, but the legend is written as ‘month of period’, which is absolutely wrong.&lt;/td&gt;
+&lt;td&gt;Change the legend of x-axis as ‘year of period’.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;The x-axis in Japan graph only gives one mark of year (2020), 2019 and 2021 are removed from x-axis.&lt;/td&gt;
+&lt;td&gt;Include 2019 and 2021 in X-axis.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;Name of category on the right is ‘Measure name’, which is not very clear&lt;/td&gt;
+&lt;td&gt;Rename the title of category as ‘Trading type’&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+&lt;h1 id=&#34;3-aesthentics&#34;&gt;3. Aesthentics&lt;a href=&#34;#3-aesthentics&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;In this section, the origincal data will be implement makeover based on Aesthentics dimension.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Index&lt;/th&gt;
+&lt;th&gt;Critiques&lt;/th&gt;
+&lt;th&gt;Improvement&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;The shading would make people unable to differentiate which line is export and which line is import.&lt;/td&gt;
+&lt;td&gt;Make the area under the line blank rather than filled them up with color.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;The unit length of Y-axis is different from one to another, which is not clear for comparison.&lt;/td&gt;
+&lt;td&gt;Standardize the unit length of Y-axis (for example 1 million)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;Each graph has different width, which looks inconsistent. It is also difficult to compare.&lt;/td&gt;
+&lt;td&gt;Set the graphs to keep the same width.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;The 6 graph is sorted in a random order instead of a logical way, which is not very suitable for people to compare.&lt;/td&gt;
+&lt;td&gt;Use one of dimension to sort them.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;The x-axis marks are removed which is difficult to detect a clear boundary between each year.&lt;/td&gt;
+&lt;td&gt;Mark each year in x-axis.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+&lt;h1 id=&#34;4-porposed-design&#34;&gt;4. Porposed Design&lt;a href=&#34;#4-porposed-design&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;sketch.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;41-the-advantages-of-sketch&#34;&gt;4.1 The advantages of sketch&lt;a href=&#34;#41-the-advantages-of-sketch&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Split the export value and import value up for separate comparison.&lt;/li&gt;
+&lt;li&gt;Include quarter marks in x-axis to have a long x-axis so that people can see the detailed changes of value over time.&lt;/li&gt;
+&lt;li&gt;Include the average value for comparison.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;h1 id=&#34;5-detail-steps-of-visualization&#34;&gt;5. Detail steps of visualization&lt;a href=&#34;#5-detail-steps-of-visualization&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h1&gt;
+
+
+
+&lt;h2 id=&#34;51-data-preprocessing-in-excel&#34;&gt;5.1 Data preprocessing in excel&lt;a href=&#34;#51-data-preprocessing-in-excel&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;There are several rows on top of table which is unnecessary in data, so I removed them from excel.
+&lt;img src=&#34;unneccessary_title_in_data.png&#34; alt=&#34;&#34;&gt;
+Since we need to compare the trading value based on countries instead of region. The first 6 rows show total value based on continents, so I removed them also.
+&lt;img src=&#34;remove_continent.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;52-data-preprocessing-in-tableau&#34;&gt;5.2 Data preprocessing in Tableau&lt;a href=&#34;#52-data-preprocessing-in-tableau&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Import two tables of data one by one into Tableau, remove the columns not in 2019-2021.
+&lt;img src=&#34;remove_precious_years_data.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Select all remaining years in the data, right click and select ‘Pivot’.
+&lt;img src=&#34;pivot_data.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Rename the field name
+&lt;img src=&#34;modify_name_and_variable_type.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;h2 id=&#34;53-line-graph-visualization&#34;&gt;5.3 Line graph visualization&lt;a href=&#34;#53-line-graph-visualization&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Once two tables are done with the 2 steps above, import them into tableau.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Data blending&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Blend 2 data by linking Data relationship and country relationship between two tables.
+&lt;img src=&#34;data_blending.png&#34; alt=&#34;&#34;&gt;
+&lt;img src=&#34;data_blending_setup.png&#34; alt=&#34;&#34;&gt;
+A sign will appear next to the linked column in primary data.
+&lt;img src=&#34;relationship_link_label.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Line graph plot&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Drag ‘Date’ into column and sum (import value) into row , then drag the sum (export value) into  row as well.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;column_and_rows.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Apply filter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Drag either one of countries in two data source into the filter position (since two country columns are linked). Select particular 6 country in the list.
+&lt;img src=&#34;filter_and_add.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Apply color&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Drag countries into ‘color’ in the marks pane, since there are lots of countries in the column, so we need to filter first then add. Check the particular 6 countries, then select ok.
+The initial colors in the filter are shown like the picture below.
+&lt;img src=&#34;initial_filter_color.png&#34; alt=&#34;&#34;&gt;
+I add a reference line in each graph to determine the hue of line:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The countries whose export number is more than 10M will be set as red hue.&lt;/li&gt;
+&lt;li&gt;The countries whose export number is less than 10M will set as blue hue.
+Then the colors are set like the picture below.
+&lt;img src=&#34;optimal_color.png&#34; alt=&#34;&#34;&gt;
+To make the break line clear, I also add a ink line in the graph which in just equal to 10M.
+&lt;img src=&#34;ink_line.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Rename titles and axis.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Title was changed as &amp;lsquo;Merchandise Trade of Six Countries, 2019-2020&amp;rsquo;,
+Y-axis title was changed as &amp;lsquo;Import Value (1000 $)&amp;rsquo; and &amp;lsquo;Export Value (1000$)&amp;rsquo;,
+X-axis title was removed.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;54-table-visualisation&#34;&gt;5.4 Table visualisation&lt;a href=&#34;#54-table-visualisation&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Create calculation fields&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For better comparison, I created a new calculation field named &amp;ldquo;2019 import value&amp;rdquo; to only include the import happened in 2019.In this case, I just demonstrate the import value, I did the same calculation for export value as well.
+&lt;img src=&#34;2019_import_value.png&#34; alt=&#34;&#34;&gt;
+Repeat the same &amp;ldquo;if-then&amp;rdquo; function to create other column named &amp;ldquo;2020 import value&amp;rdquo;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create the table&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Drag the countries into the row, drag the year of Date into the column.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Filter the countries to only include the six countries, and filter Date to only include 2019 and 2020.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Drag the import value into the color and also drag it into the text in mark pane.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To make the hue of dashboard look consistent, I just set the import table as Red background and set the export table as Blue background.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Modify the number unit as M(million), after all steps below, the table is shown as the picture below:
+&lt;img src=&#34;2019_import_table.png&#34; alt=&#34;&#34;&gt;
+One thing worth mentioning is that I just demonstrate import table step by step, I also created the same type of table for export table as well, and the table is shown as the picture below:
+&lt;img src=&#34;2020_export_table.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+&lt;h2 id=&#34;55-create-growth-table&#34;&gt;5.5 Create growth table&lt;a href=&#34;#55-create-growth-table&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;To purly see the trend between 2019 and 2020 (up/down), I also created a table to see the growth by year.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create several new calculation fields&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Create a new calculation field named &amp;ldquo;growh %&amp;rdquo; to see the changes of import value from 2019 to 2020.
+&lt;img src=&#34;growth.png&#34; alt=&#34;&#34;&gt;
+Then create another calculation field named &amp;ldquo;up/dowm&amp;rdquo; to mark whether the growth is positive or negative.
+&lt;img src=&#34;up_down.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Created the growth table&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Drag countries into the row, filter countries to only include six countries.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Drag &amp;ldquo;growth %&amp;rdquo; to the text, drag &amp;ldquo;up/down&amp;rdquo; into the color area as well as shape area in the mark pane.
+&lt;img src=&#34;up_down_in_marks.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To make people understand the up/down trend, set the &amp;ldquo;up&amp;rdquo; as upwards trangle and &amp;ldquo;down&amp;rdquo; as downward triangle.
+&lt;img src=&#34;shape_of_up_down.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Similarly, change the color as red and green respectively.
+&lt;img src=&#34;color_of_up_down.png&#34; alt=&#34;&#34;&gt;
+After all steps above, the table is shown as the picture below:
+&lt;img src=&#34;growth_table.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Drag countries into rows and drag import value into rows, change calculation as sum().&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Change the way of showcase to ‘highlight table’.
+&lt;img src=&#34;show_way.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Change the value shown as percentage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Right click on the sum (import value) &amp;gt; quick table calculation &amp;gt; percent of total.
+&lt;img src=&#34;percent_of_total.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rename header and repeat the same step to create import value table.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;final_table_import.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;56-dashboard-visualization&#34;&gt;5.6 Dashboard visualization&lt;a href=&#34;#56-dashboard-visualization&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Add sheets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Drag line graph into the left and drag two tables int the right.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add source&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Using Object &amp;gt; Text &amp;gt; drag text to the bottom, then add the source and the raw data link.&lt;/p&gt;
+&lt;p&gt;The final dashboard would be shown like the picture below.
+&lt;img src=&#34;finale_outcome_of_data.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+
+
+&lt;h1 id=&#34;6-insights-from-new-graph&#34;&gt;6. Insights from new graph&lt;a href=&#34;#6-insights-from-new-graph&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Japan and Taiwan have the similar flat trend in terms of Export value changes over time.&lt;/li&gt;
+&lt;li&gt;Mainland China has the most value in both export and import most of time.&lt;/li&gt;
+&lt;li&gt;Hong Kong has a very large number of export value during 2 years whereas, in comparison to import value, it has the least import value.&lt;/li&gt;
+&lt;li&gt;For United States, we can see a downward trend both in import and export.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

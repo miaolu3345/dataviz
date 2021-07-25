@@ -2,6 +2,6 @@
 header:
   caption: ""
   image: ""
-title: "Makeover"
+title: "Post"
 view: 2
 ---
